@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "name": "Smartphone",
+        "description": "Latest model with 5G and high-resolution camera.",
+        "price": 29999,
+        "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
+        "type": "electronic"
+    },
+    {
+        "id": 2,
+        "name": "Laptop",
+        "description": "Powerful laptop with 16GB RAM and SSD storage.",
+        "price": 79999,
+        "image": "https://m.media-amazon.com/images/I/510uTHyDqGL._AC_UF1000,1000_QL80_.jpg",
+        "type": "electronic"
+    },
+    {
+        "id": 3,
+        "name": "Wireless Earbuds",
+        "description": "True wireless earbuds with long battery life.",
+        "price": 3999,
+        "image": "https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/25776410/2024/5/24/8faf3a17-ac84-4e51-84b2-87ed5d4aae7e1716533516608-NOISE-Aura-Buds-Truly-Wireless-Earbuds-with-60H-Playtime-and-1.jpg",
+        "type": "electronic"
+    },
+    {
+        "id": 4,
+        "name": "Gaming Console",
+        "description": "Next-gen console for immersive gaming.",
+        "price": 49999,
+        "image": "https://www.imagella.com/cdn/shop/files/20de5e013186df3ff1ec01e41b14ee37_ba9c41b8-adc7-4d15-b698-1ca85da7cee2.jpg?v=1739850199",
+        "type": "electronic"
+    },
+    {
+        "id": 5,
+        "name": "Smart TV",
+        "description": "4K Ultra HD smart TV with streaming apps.",
+        "price": 64999,
+        "image": "https://images.samsung.com/is/image/samsung/p6pim/in/ua43du7660klxl/gallery/in-crystal-uhd-du7000-ua43du7660klxl-540323211?$684_547_PNG$",
+        "type": "electronic"
+    },
+    {
+        "id": 6,
+        "name": "Fitness Tracker",
+        "description": "Track your activity and heart rate with ease.",
+        "price": 2999,
+        "image": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1701614246/Croma%20Assets/Communication/Wearable%20Devices/Images/263853_0_xfgsey.png?tr=w-600",
+        "type": "electronic"
+    },
+    {
+        "id": 7,
+        "name": "Wireless Headphones",
+        "description": "High-quality wireless headphones with noise cancellation.",
+        "price": 2999,
+        "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e",
+        "type": "featured"
+    },
+    {
+        "id": 8,
+        "name": "Smart Watch",
+        "description": "Feature-packed smart watch with fitness tracking.",
+        "price": 4999,
+        "image": "https://images.unsplash.com/photo-1546868871-7041f2a55e12",
+        "type": "featured"
+    },
+    {
+        "id": 9,
+        "name": "Portable Speaker",
+        "description": "Compact Bluetooth speaker with powerful sound.",
+        "price": 1999,
+        "image": "https://images.unsplash.com/photo-1605649487212-47bdab064df7",
+        "type": "featured"
+    },
+    {
+        "id": 10,
+        "name": "Laptop Backpack",
+        "description": "Durable backpack with laptop compartment.",
+        "price": 2499,
+        "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62",
+        "type": "featured"
+    },
+    {
+        "id": 11,
+        "name": "Wireless Mouse",
+        "description": "Ergonomic wireless mouse for smooth operation.",
+        "price": 999,
+        "image": "https://foxin.in/cdn/shop/files/1_786f2df2-5718-492c-86d9-6c83a1c957b1.jpg?v=1729508280",
+        "type": "featured"
+    },
+    {
+        "id": 12,
+        "name": "USB-C Hub",
+        "description": "Multi-port USB-C hub for enhanced connectivity.",
+        "price": 1499,
+        "image": "https://images.unsplash.com/photo-1629654297299-c8506221ca97",
+        "type": "featured"
+    }
+]

@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Wireless Headphones",
+        "description": "High-quality wireless headphones with noise cancellation.",
+        "price": 2999,
+        "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e"
+    },
+    {
+        "id": 2,
+        "name": "Smart Watch",
+        "description": "Feature-packed smart watch with fitness tracking.",
+        "price": 4999,
+        "image": "https://images.unsplash.com/photo-1546868871-7041f2a55e12"
+    },
+    {
+        "id": 3,
+        "name": "Portable Speaker",
+        "description": "Compact Bluetooth speaker with powerful sound.",
+        "price": 1999,
+        "image": "https://images.unsplash.com/photo-1605649487212-47bdab064df7"
+    },
+    {
+        "id": 4,
+        "name": "Laptop Backpack",
+        "description": "Durable backpack with laptop compartment.",
+        "price": 2499,
+        "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62"
+    },
+    {
+        "id": 5,
+        "name": "Wireless Mouse",
+        "description": "Ergonomic wireless mouse for smooth operation.",
+        "price": 999,
+        "image": "https://images.unsplash.com/photo-1613146858488-0e7df4e6e397"
+    },
+    {
+        "id": 6,
+        "name": "USB-C Hub",
+        "description": "Multi-port USB-C hub for enhanced connectivity.",
+        "price": 1499,
+        "image": "https://images.unsplash.com/photo-1629654297299-c8506221ca97"
+    }
+]

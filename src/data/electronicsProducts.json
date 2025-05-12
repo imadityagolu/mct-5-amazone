@@ -1,0 +1,44 @@
+[
+    {
+        "id": 7,
+        "name": "Smartphone",
+        "description": "Latest model with 5G and high-resolution camera.",
+        "price": 29999,
+        "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9"
+    },
+    {
+        "id": 8,
+        "name": "Laptop",
+        "description": "Powerful laptop with 16GB RAM and SSD storage.",
+        "price": 79999,
+        "image": "https://images.unsplash.com/photo-1496182297062-6f29cc2612a1"
+    },
+    {
+        "id": 9,
+        "name": "Wireless Earbuds",
+        "description": "True wireless earbuds with long battery life.",
+        "price": 3999,
+        "image": "https://images.unsplash.com/photo-1572569511254-32d970b5fc86"
+    },
+    {
+        "id": 10,
+        "name": "Gaming Console",
+        "description": "Next-gen console for immersive gaming.",
+        "price": 49999,
+        "image": "https://images.unsplash.com/photo-1606144042614-b040ef976b07"
+    },
+    {
+        "id": 11,
+        "name": "Smart TV",
+        "description": "4K Ultra HD smart TV with streaming apps.",
+        "price": 64999,
+        "image": "https://images.unsplash.com/photo-1593787816447-1b7d4e89f1ec"
+    },
+    {
+        "id": 12,
+        "name": "Fitness Tracker",
+        "description": "Track your activity and heart rate with ease.",
+        "price": 2999,
+        "image": "https://images.unsplash.com/photo-1575318634028-6f33675f251e"
+    }
+]
