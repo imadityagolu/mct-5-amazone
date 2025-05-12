@@ -58,41 +58,39 @@ function Cart() {
         }
 
         try {
-            // Simulate backend API call to create a Razorpay order
+            // Fetch Razorpay order from backend
+            const response = await fetch('/api/create-order', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ amount: total * 100, currency: 'INR', userId: user.uid }),
+            });
+
+            // Check response status
+            if (!response.ok) {
+                throw new Error(`Server error: ${response.status} ${response.statusText}`);
+            }
+
+            // Check for empty response
+            const text = await response.text();
+            if (!text) {
+                throw new Error('Empty response from server');
+            }
+
+            // Parse JSON
             let order;
             try {
-                const response = await fetch('/api/create-order', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ amount: total * 100, currency: 'INR', userId: user.uid }),
-                });
-
-                // Check if response is OK
-                if (!response.ok) {
-                    throw new Error(`Server responded with status: ${response.status}`);
-                }
-
-                // Check if response body is empty
-                const text = await response.text();
-                if (!text) {
-                    throw new Error('Empty response from server');
-                }
-
-                // Parse JSON
                 order = JSON.parse(text);
-            } catch (fetchError) {
-                console.error('Fetch error:', fetchError);
-                // Fallback to simulated order if backend is not available
-                order = {
-                    id: 'order_' + Math.random().toString(36).substr(2, 9),
-                    amount: total * 100, // Convert to paise
-                    currency: 'INR',
-                };
-                console.warn('Using simulated order due to fetch error:', fetchError.message);
+            } catch (jsonError) {
+                throw new Error('Invalid JSON response: ' + jsonError.message);
+            }
+
+            // Validate order
+            if (!order.id || !order.amount || !order.currency) {
+                throw new Error('Invalid order data received');
             }
 
             const options = {
-                key: 'rzp_test_YOUR_KEY_HERE', // Replace with your Razorpay test key
+                key: 'rzp_live_XQSSdVs9aUuJBO', // Replace with your Razorpay test key
                 amount: order.amount,
                 currency: order.currency,
                 name: 'Your Store Name',
@@ -114,7 +112,8 @@ function Cart() {
 
             const rzp = new window.Razorpay(options);
             rzp.on('payment.failed', function (response) {
-                toast.error('Payment failed: ' + response.error.description);
+                console.error('Payment failure details:', response.error);
+                toast.error(`Payment failed: ${response.error.description} (Code: ${response.error.code})`);
             });
             rzp.open();
         } catch (err) {
@@ -163,7 +162,6 @@ function Cart() {
     }
 
     return (
-        <>
         <div className="w-full p-2 sm:p-4">
             <p className="font-bold text-black text-xl sm:text-xl flex gap-2 p-3">
                 <FaShoppingCart className="text-3xl text-yellow-500"/>My Cart !
@@ -237,7 +235,6 @@ function Cart() {
                 </div>
             )}
         </div>
-        </>
     );
 }
 
